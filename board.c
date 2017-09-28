@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/27 11:18:24 by sgardner          #+#    #+#             */
-/*   Updated: 2017/09/27 14:53:03 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/09/27 22:57:33 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ t_board	*gen_board(int size)
 		free(board);
 		return (NULL);
 	}
-	board->grid[size] = NULL;
 	i = 0;
 	while (i < size)
 	{
