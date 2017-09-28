@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/24 23:46:04 by sgardner          #+#    #+#             */
-/*   Updated: 2017/09/27 21:59:59 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/09/28 11:36:54 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,11 +103,7 @@ t_board			*solve(t_shape *shapes)
 	size = 2;
 	while (size * size < min_area)
 		size++;
-	board = gen_board(size);
-	while (!work_board(board, shapes))
-	{
+	while (!work_board((board = gen_board(size++)), shapes))
 		free_board(board);
-		board = gen_board(++size);
-	}
 	return (board);
 }
