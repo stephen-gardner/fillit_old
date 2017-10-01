@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/24 17:17:05 by sgardner          #+#    #+#             */
-/*   Updated: 2017/09/27 21:46:00 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/09/29 00:08:50 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,7 @@ t_bool			load_all_shapes(int fd, t_shape **shapes)
 		shapes = &(*shapes)->next;
 	}
 	if (bytes != 0 || more)
-		return (0);
+		return (FALSE);
 	return (count > 0 && count <= 26);
 }
 
