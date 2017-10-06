@@ -6,7 +6,7 @@
 /*   By: sgardner <stephenbgardner@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/24 15:20:29 by sgardner          #+#    #+#             */
-/*   Updated: 2017/09/27 14:52:18 by sgardner         ###   ########.fr       */
+/*   Updated: 2017/10/05 23:15:58 by sgardner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@ int		main(int argc, char **argv)
 		return (1);
 	}
 	print_board(solve(shapes));
+	unload_shapes(shapes);
 	return (0);
 }
